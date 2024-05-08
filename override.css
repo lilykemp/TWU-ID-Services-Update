@@ -1,0 +1,1059 @@
+/*-------------------------------------------------------------------------*
+|  This document has been adapted from the official TWU ID Services page.  |
+|                                                                          |
+|   - Author: Texas Woman's University                                     |
+|   - Date accessed: 10/25/2023 - 11/18/2023                               |
+|   - Raw HTML                                                             |
+|   - https://twu.edu/id-services/                                         |
+|                                                                          |
+*--------------------------------------------------------------------------*/
+
+/* LILY ADDED */
+
+#login-button:link,
+#login-button:visited {
+  background-color: #850928;
+  color: white;
+  width: 30%;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#login-button:hover,
+#login-button:active {
+  background-color: #6e0722;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.faq-dropdown-heading {
+  font-size: 17px;
+}
+
+.topbar__list > li > a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#topbar__navigation--right a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer__right li a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer__left li a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#address {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*
+.left_sidebar_li {
+  margin-top: 7%;
+  margin-bottom: 7%;
+  padding: 2px;
+}
+*/
+
+.left_sidebar_a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* QUESTIONS FORM STYLING */
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #850928;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #6e0722;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 75px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* END QUESTION FORM STYLING*/
+/* END LILY ADDED */
+
+.dept-hero__opt {
+  height: 60vh;
+  max-height: 60vh;
+}
+/* changed from 1575 to 1980 to avoid caption breaking */
+@media only screen and (max-width: 1980px) {
+  .dept-hero__opt {
+    height: auto;
+  }
+}
+/* IE11-specific styles below */
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .dept-hero__opt {
+    height: auto;
+    max-height: 100vh;
+  }
+  .dept-hero__opt img {
+    height: auto;
+    width: 100%;
+  }
+  .text-overlay-container {
+    bottom: 4rem;
+  }
+}
+/* overlay styles below */
+.dept-hero__headline .hero__caption,
+.dept-hero__headline .wrap {
+  max-width: 94rem;
+}
+@media only screen and (max-width: 1023px) {
+  #dept-hero-outer-container {
+    height: auto;
+    max-height: 100%;
+  }
+}
+.dept-hero__headline {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  padding: 1rem 0;
+  font-weight: 700;
+  width: 100%;
+}
+.dept-hero__headline-left {
+  text-align: left;
+}
+.dept-hero__headline-center {
+  text-align: center;
+}
+.dept-hero__headline-background {
+  background: rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+}
+.dept-hero__headline-shadow {
+  background: rgba(0, 0, 0, 0);
+  text-shadow: 3px 3px 3px black;
+}
+@media (min-width: 64em) {
+  .dept-hero__headline {
+    font-size: 50px;
+    font-size: 3.125rem;
+    padding: 2rem 0;
+  }
+  .sidebar2 {
+    width: 20rem !important;
+  }
+  .main.main-program {
+    width: calc(100% - 22rem) !important;
+  }
+}
+/* END NEW DEPT HERO STYLES */
+
+/* BEGIN SMALLER HEADER STYLES FOR ALL TEMPLATES */
+/* mobile first styles */
+.topbar__dropdown__icon {
+  /* raise gray topbar down arrow */
+  margin-top: 1rem;
+}
+.header__logo {
+  /* reduce margin above and below logo 02-06-20 by GD */
+  margin: 4.215rem 0 1.1rem;
+}
+/* smaller header styles for tablet and larger */
+@media (min-width: 43em) {
+  .header__logo {
+    margin: 4.125rem 0 1.25rem; /* reduce logo margins tablet */
+    width: 29rem; /* make logo smaller */
+  }
+}
+/* smaller header styles for desktop */
+@media (min-width: 64em) {
+  .nav__link {
+    font-size: 1.125rem; /* decrease font size of maroon nav */
+  }
+  .nav__link--cta {
+    /* decrease font size of apply visit get info */
+    font-size: 0.9rem;
+  }
+  .nav__wrap {
+    /* shorten maroon nav bar and remove gap above panel */
+    line-height: 1.75rem;
+    height: 2.8rem;
+  }
+  a.nav__link.nav__link--cta {
+    /* shorten apply visit get info */
+    padding: 7.1px;
+  }
+  .topbar {
+    /* make gray topbar shorter */
+    height: 2.75rem;
+  }
+  .topbar__list a {
+    line-height: 2.75rem;
+  }
+  .header__logo {
+    margin: 1.5rem 0 1.5rem 0.65rem; /* reduce logo margins desktop */
+  }
+  div.subnav__list li {
+    /* reduce space between dropdown items */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+}
+/* END SMALLER HEADER STYLES FOR ALL TEMPLATES */
+
+/* "INFO FOR" ROLE-BASED DROPDOWN CHANGES. ADD DELAY AND FIX BREAKAGE -GD 08/29/19 */
+.topbar__dropdown--active ul.topbar__dropdown__list {
+  transition-delay: 0.3s;
+}
+.topbar__dropdown__list {
+  margin-top: -0.25rem;
+}
+/* IE11-specific styles below */
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .topbar__dropdown--active ul.topbar__dropdown__list {
+    transition-delay: 0s; /* prevents Info For dropdown breakage */
+  }
+}
+/* END "INFO FOR STYLES" */
+@media screen and (min-width: 764px) {
+  #notice p {
+    line-height: 1.6em;
+  }
+}
+/* HOMEPAGE TESTIMONIALS AND NEWS SPACING */
+.testimonial-section {
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+.main.news-main {
+  margin-top: 2em;
+}
+.sidebar.events-sidebar {
+  margin-top: 2em;
+}
+/* end HOMEPAGE TESTIMONIALS AND NEWS SPACING */
+
+/* For h2 in Text with Captioned Image (Fullwidth), added 10-09-19 by SB */
+/* Also for caption wrap fix in Text with Captioned Image (Fullwidth), added 10-16-19 by GD */
+h2.centered-clear {
+  text-align: center;
+  clear: both;
+}
+section.fullwidth-image figcaption {
+  display: inline-block;
+}
+/* END For h2 in Text with Captioned Image (Fullwidth) */
+
+/*Add Margin top space between 2 bootstrap rows class*/
+.margin-top-1em {
+  margin-top: 1em;
+}
+/*Override some classes for public facing APPS*/
+.main-fullwidth {
+  margin-top: 5rem;
+}
+/* For Black History Month site 02-05-20 by Scott */
+.honoree::after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 2rem;
+}
+/* reduce main col height on 1-col template to make header appear smaller 02-06-20 by GD */
+.main-1-col {
+  margin: 0.8rem auto 2.25rem;
+}
+/* white general-purpose button 02-10-20 GD */
+.white-button {
+  background-color: #fff;
+  color: #850928;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+.white-button:hover {
+  background-color: #850928;
+}
+.white-button:focus {
+  background-color: #fff;
+  color: #850928;
+}
+/* gradient overlay removal option for Feature CTAs 02-10-20 GD */
+.feature__large--image-no-gradient {
+  position: relative;
+}
+.feature__large--image-no-gradient:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0));
+}
+/* program page form 03-04-20 GD */
+#program-form-container {
+  margin-bottom: 6em;
+}
+#program-form-button {
+  background-color: #fff;
+}
+#program-form-button:hover {
+  background-color: #850928;
+  color: #fff;
+}
+
+/* Boldly Go apply/visit/get info buttons 03-06-20 GD */
+/* AVGI Buttons */
+
+h2#apply-visit-get-info {
+  font-size: 3em;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-area {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+
+a.button-area-line {
+  background: #999;
+  padding: 1em 2.4em;
+  font-size: 0.9em;
+  margin: 1em;
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.button-area-line {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 90%;
+}
+
+a.button-area-line {
+  background: #999;
+  padding: 1em;
+  font-size: 0.9em;
+  margin: 0.3em;
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.button-container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0.4em;
+  margin-bottom: 2.5em;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.button-col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.btn-default.avgi-button {
+  padding: 0.6rem 2.8rem;
+}
+
+@media (min-width: 992px) {
+  .button-area-line {
+    flex-direction: row;
+  }
+  .button-container-fluid {
+    max-width: 561px;
+    margin-top: 1.5em;
+    margin-bottom: 6em;
+  }
+  h2#apply-visit-get-info {
+    font-size: 4.95em;
+  }
+  .block.finder {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+/* Gray box with button for Admissions' How to Apply page 04-10-20 GD */
+.large-gray-content {
+  padding: 0.5rem;
+}
+.gray-box {
+  padding-bottom: 0;
+  margin-bottom: 2rem;
+}
+.gray-box-p {
+  padding-top: 0.75em;
+}
+a.gray-button {
+  background: #fff;
+  white-space: normal;
+}
+@media (min-width: 768px) {
+  .large-gray-content {
+    padding: 2rem;
+  }
+}
+/* Give jump marks a top margin so fixed header won't cover them on mobile 03-24-20 GD */
+.jump-scroll {
+  scroll-margin-top: 3.5rem;
+}
+@media (min-width: 1024px) {
+  .jump-scroll {
+    scroll-margin-top: 0;
+  }
+}
+/* Uniform spacing for headings and .section class on content types 04-22-20 GD  */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0rem;
+}
+/* Reduce margin under buttons and allow wrapping 04-29-20 GD */
+.button-margin {
+  margin-bottom: 0;
+}
+.btn {
+  white-space: normal;
+}
+/* Fix line height on x-large HTML editor drop-down style 05-05-20 GD */
+.x-large {
+  line-height: 2.4rem;
+}
+/* Change orange #CA1E50 4-up tiles to amaranth 05-27-20 GD */
+.faculty__gallery__content {
+  background: rgba(202, 30, 80, 0.85);
+}
+/* Change orange #CA1E50 faculty sliders to amaranth 05-28-20 GD */
+.feature__block__faculty--angle:after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100' width='2800' fill='%23CA1E50' fill-opacity='.85'%3E%3Cpath d='M0 100h2800L0 0z'/%3E%3C/svg%3E");
+}
+.feature__block__faculty__content--text {
+  background-color: rgba(202, 30, 80, 0.85);
+}
+/* Change orange #CA1E50 recource finder tiles to amaranth 05-29-20 GD */
+.button-grid__link {
+  background-color: rgba(202, 30, 80, 0.85);
+}
+a.button-grid__link:focus,
+a.button-grid__link:hover {
+  background-color: #ca1e50;
+}
+.tabbed__item__angle--active .tabbed__item__angle {
+  background-color: rgba(202, 30, 80, 0.85);
+}
+@media (min-width: 48em) and (max-width: 64em) {
+  .tabbed__item__angle:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='190' width='2800' fill='%23CA1E50' fill-opacity='.85'%3E%3Cpath d='M0 190h2800L0 0z'/%3E%3C/svg%3E");
+  }
+}
+@media (min-width: 64em) {
+  .tabbed__item__angle:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='110' width='2800' fill='%23CA1E50' fill-opacity='.85'%3E%3Cpath d='M0 110h2800L0 0z'/%3E%3C/svg%3E");
+  }
+}
+.button-grid__link {
+  background-color: rgba(202, 30, 80, 0.85);
+}
+/* Add large white text option to T4's HTML editor 06-08-20 GD */
+.large-white {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  color: #ffffff;
+  line-height: 1.5;
+  font-weight: 700;
+}
+/* Add white text class for headings over features with maroon backgrounds 06-24-20 GD */
+.white-text {
+  color: white;
+}
+/* style home icon for breadcrumbs 07-01-20 GD  */
+.home-icon {
+  width: 20px;
+  height: 16px;
+}
+.breadcrumbs li:first-child a:not([class]) {
+  background-image: linear-gradient(rgba(3, 44, 76, 0), rgba(3, 44, 76, 0));
+}
+/* disclosure styles by SB added by GD 07-01-20 */
+.disclosure-statement {
+}
+.disclosure-statement hr {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.disclosure-statement .back-to-program {
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.disclosure-footnote {
+  font-size: 90%;
+  margin-bottom: 4rem;
+}
+.disclosure-footnote hr {
+  margin: 1.5rem 0;
+}
+/* link color 11-16-20 */
+a {
+  color: #433eab;
+}
+/* add visual focus to slider arrows 4-27-21 GD */
+button.slick-prev.slick-arrow:focus,
+button.slick-next.slick-arrow:focus {
+  border: 2px solid #2360c5;
+  border-radius: 5px;
+}
+/* add second close X at end of mobile nav 4-29-21 GD */
+.floating-menu {
+  width: 100%;
+  background-color: #850928;
+}
+.close-menu-text {
+  padding-left: 2.5em;
+  padding-top: 0.65em;
+}
+.close-menu-button {
+  float: left;
+}
+@media (min-width: 64em) {
+  .floating-menu {
+    display: none;
+  }
+}
+/* adjust padding of social icons so marquee shows 7-15-21 GD */
+.footer__social--icon {
+  padding: 0.1em;
+}
+@media (min-width: 64em) {
+  .footer__social {
+    padding: 0 0.9rem;
+  }
+}
+@media (min-width: 48em) {
+  .footer__social li {
+    padding: 0.8rem 0.5rem;
+  }
+}
+/* bring mobile dropdown menu in front of hero slider 8-6-21 GD */
+.menu-active .nav__wrap {
+  z-index: 100;
+}
+/* bring desktop subnav menu in front of hero slider 8-6-21 GD */
+@media (min-width: 64em) {
+  div.subnav__list {
+    z-index: 100;
+  }
+}
+/* darken links in Denton/Dallas/Houston pre-subfooter 8-18-21 GD */
+.pre-footer__text a {
+  background-image: none;
+  text-decoration: underline;
+}
+/* add underline to catalog links 8-19-21 GD */
+a.bubblelink {
+  background-image: linear-gradient(rgba(3, 44, 76, 0.3), rgba(3, 44, 76, 0.3));
+}
+a.bubblelink,
+a.bubblelink:hover {
+  background-repeat: repeat-x;
+  background-position: 0 90%;
+  background-size: 100% 0.0625rem;
+}
+/* add underline to all footer links 8-25-21 GD */
+footer.footer a {
+  text-decoration: underline;
+}
+/* bring mobile header and search in front of hero slider 9-23-21 GD */
+.header__small {
+  z-index: 45;
+}
+.search-active .search__wrap {
+  z-index: 45;
+}
+/* add side margins to paragraph in Text Feature II Fullwidth 9-27-21 GD  */
+.block--sidetext p {
+  margin: 0 1em 1em 1em;
+}
+/* force white link underlines in Text Feature II Fullwidth 9-27-21 GD  */
+.block--sidetext a {
+  color: #fff;
+  text-decoration: underline;
+}
+.block--sidetext a,
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+/* Styles for Icon Feature (Fullwidth) GD 11-16-21 */
+.tile {
+  padding: 14px;
+  margin: 0 auto;
+  margin-top: 12px;
+  background-color: #f6f6f6;
+  transition: transform 0.2s;
+  width: 155px;
+  height: 150px;
+}
+.tile:hover {
+  transform: scale(1.25);
+  background-color: #fff;
+}
+.tile span[class*="svgstore--"] {
+  padding-bottom: 0;
+}
+.tile span {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 auto 1rem;
+}
+.icon-container {
+  margin-top: 0rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  padding: 37px;
+  background-color: #f6f6f6;
+  box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+.icon-link {
+  color: #000;
+  text-decoration: underline;
+}
+.row.icon-container:before {
+  content: none;
+}
+.row.icon-container:after {
+  content: none;
+}
+@media (max-width: 992px) {
+  .icon-container {
+    margin-top: 3rem;
+  }
+}
+/* Center H2 on SlickSlider Hero w/Heading Only no CTA button GD 1-12-22 */
+h2.hero-slider-heading-centered {
+  text-align: center !important;
+}
+/* Increase contrast on small text for accessibility GD 03-23-22 */
+.filter__main .search__results__title .small,
+.filter__main .search__results__title small,
+.h1 .small,
+.h1 small,
+.h2 .small,
+.h2 small,
+.h3 .small,
+.h3 small,
+.h4 .small,
+.h4 small,
+.h5 .small,
+.h5 small,
+.h6 .small,
+.h6 small,
+.pre-footer__location .small,
+.pre-footer__location small,
+.sidebar__heading .small,
+.sidebar__heading small,
+h1 .small,
+h1 small,
+h2 .small,
+h2 small,
+h3 .small,
+h3 small,
+h4 .small,
+h4 small,
+h5 .small,
+h5 small,
+h6 .small,
+h6 small {
+  color: #757575;
+}
+/* Increase contrast on Program Finder Button type for accessibility GD 04-04-22 */
+.skew {
+  background-color: #850928;
+}
+/* Remove units and bump us line height for accessibility GD 04-08-22 */
+.p--small,
+p {
+  line-height: 1.6;
+}
+.large {
+  line-height: 1.7;
+}
+/* Change line height from rem units for accessibility GD 06-15-22 */
+@media (min-width: 64em) {
+  .topbar__list a {
+    line-height: 3.2;
+  }
+}
+/* Declare line height for accessibility GD 06-15-22 */
+.topbar__list--right p {
+  line-height: 1.5;
+}
+.white-text {
+  line-height: 1.5;
+}
+.block__content--academic .h1,
+.block__content--residence .h1 {
+  line-height: 1.6;
+}
+.h1,
+h1 {
+  line-height: 1.5;
+}
+.p--large {
+  line-height: 1.7;
+}
+/* Make links blue on hover for 3-Across Tiles with Text Below GD 07-01-22 */
+a.text-below:hover {
+  color: #433eab;
+}
+/* Declare line height for accessibility GD 07-5-22 */
+.x-large {
+  line-height: 1.6;
+}
+.large {
+  line-height: 1.6;
+}
+/*Show and Hide anchor icon - MichaelT 8-11-2022*/
+.anchorlink {
+  visibility: hidden;
+}
+.anchorheading:hover .anchorlink {
+  visibility: visible;
+}
+.nolink {
+  font-size: 15px;
+  color: #efefef;
+}
+a.nolink:link,
+a.nolink:active,
+a.nolink:focus {
+  color: #efefef;
+}
+a.nolink:hover {
+  color: #333333;
+}
+/* Remove vertical scroll & show all Accordion contents GD 08-22-22 */
+.accordion__panel[aria-hidden="false"] {
+  max-height: 100%;
+}
+/* Open Accordion & resize dept social for print GD 08-22-22 */
+@media print {
+  .accordion__panel {
+    max-height: 100%;
+    overflow: auto;
+    padding: 1.25em;
+    visibility: visible;
+  }
+  .sidebar__social a {
+    width: 100%;
+  }
+  a span.svgstore {
+    visibility: hidden;
+  }
+}
+/* Styles for Data Grid Panels (General) content type GD 10-10-22 */
+.auto-grid {
+  --auto-grid-min-size: 14rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+.grid-body {
+  padding: 1rem;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+.grid-body li {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  background: #f6f6f6;
+  list-style: none;
+}
+.grid-body ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-left: 0.25rem;
+}
+.grid-body h3 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  color: #850928;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Styles for Feature CTA II (General) content type GD 10-10-22 */
+h2.gray-box {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+div.gray-box-paragraph p {
+  margin-bottom: 1.75em;
+}
+div.cta-links a {
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  line-height: 1.42857;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  padding: 0.6rem 0.8rem;
+  margin: 0.7rem 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  color: #850928;
+  background-color: transparent;
+  border-color: #850928;
+  display: block;
+  background: #fff;
+  white-space: normal;
+}
+div.cta-links a:hover {
+  background-color: #850928;
+  color: #fff;
+  border-color: #850928;
+}
+div.cta-links a:not([class]):hover {
+  background-image: none;
+}
+div.feature__large--content.large-gray-content a p {
+  margin-bottom: 0;
+}
+/*hide footer of Constant Contact form for accessibility by ES 02-15-23 */
+p.ctct-form-footer {
+  display: none;
+}
+/*make font size of Constant Contact form not a fixed size for accessibility by ES 02-16-23 */
+div.ctct-form-embed div.ctct-form-defaults p.ctct-form-text {
+  font-size: 1em !important;
+}
+div.ctct-form-embed div.ctct-form-defaults p.ctct-gdpr-text {
+  font-size: 0.75em !important;
+}
+/* Change fixed line height to rem-based GD 02-28-23 */
+blockquote p {
+  line-height: 1.5;
+}
+/* Deaf Scientist Corner Styles GD 03-16-23 */
+.dsc-icon {
+  margin-right: 1rem;
+}
+h2.dsc-icon-heading {
+  font-size: 1.75rem;
+  font-family: adelle, serif;
+  margin: 0 0 1em 0;
+}
+h2.dsc-icon-heading a {
+  color: #850928;
+  text-decoration: underline;
+}
+a.openVideo {
+  text-decoration: underline;
+}
+div.video-popup video {
+  max-width: 325px;
+}
+button.mfp-close {
+  opacity: 1;
+  color: #fff !important;
+}
+/* Pseudo class "after" not working on Video type so add directly to class GD 04-26-23 */
+.clear-content {
+  clear: both;
+}
+/* Round corners of hero text overlay button GD 05-05-23 */
+.white-button-2 {
+  border-radius: 4px !important;
+}
+/* Make H2 on housing blurbs white GD 05-26-23 */
+#text-blurb-on-left h2 {
+  color: #ffffff;
+}
+/* Add container for modal footer info GD 06-23-23 */
+.panorama-margin {
+  margin-bottom: 0 !important;
+}
+.room-info {
+  padding: 15px;
+}
+.info-cell {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #413f46;
+}
+.btn-wide {
+  width: 100%;
+  margin: 0;
+  border-color: #850928 !important;
+  color: #850928 !important;
+}
+a.btn.btn-default.btn-wide:hover {
+  color: #ffffff !important;
+  background: #850928;
+}
+/* Remove bullets and left margin from HR staff and faculty jobs lists GD 06-29-23 */
+ul.tall-list {
+  padding-left: 0;
+}
+ul.tall-list > li {
+  margin-bottom: 2em;
+  list-style-type: none;
+}
+/* Force break after 3rd panorama modal and before page updated GD 08-14-23 */
+div.col-md-4.threefer-col:nth-child(5 of div) {
+  clear: both;
+}
+#page-updated {
+  clear: both;
+}
+/* Style new Threads and X social icons GD 09-25-23 */
+.svgstore--x {
+  padding-bottom: 92%;
+}
+.svgstore--threads {
+  padding-bottom: 100%;
+}
+/* Increase contrast of Page Last Updated for accessibility GD 10-16-23 */
+p#page-updated {
+  color: #575757;
+}
+/* Override Juicer embed CSS for accessibile text GD 10-18-23 */
+.juicer-feed.modern .j-message {
+  color: #595959 !important;
+}
+/* Declare font size for accessibility GD 10-23-23 */
+.text-overlay p {
+  font-size: 1em !important;
+}
+@media screen and (max-width: 768px) {
+  .text-overlay p {
+    font-size: 1em !important;
+  }
+}
+/* Override GeckoChatWidget for accessibility GD 10-23-23 */
+p.plain {
+  font-size: 1em !important;
+}
+.GeckoChatWidget p {
+  font-size: 1em !important;
+}
